@@ -80,7 +80,7 @@ def post_process(predicted_sentences, test_sentences, args):
         sources_tags.append(source_tags)
         targets_tags.append(target_tags)
 
-    return sources_tags, targets_tags
+    return sources_tags, targets_tags, target_sentence.split()
 
 # def post_process(predicted_sentences, test_sentences):
 #     sources_tags = []
