@@ -1112,7 +1112,7 @@ class MicroTransQuestModel:
 
         sources_tags, targets_tags = post_process(preds, to_predict, args=self.args)
 
-        return sources_tags, targets_tags
+        return sources_tags, targets_tags, word_tokens
 
     def _convert_tokens_to_word_logits(self, input_ids, label_ids, attention_mask, logits):
 
