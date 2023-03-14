@@ -14,11 +14,13 @@ def main():
       de_src = item.get("translation").get("de")
       en_tgt = item.get("translation").get("en")
       predictions = model_sentence.predict([[de_src, en_tgt]])
-      print(counter)
-      print(de_src)
-      print(en_tgt)
-
-      print(predictions)
+      
+      if (predictions <= 0.91):
+        print(counter)
+        print(de_src)
+        print(en_tgt)
+        print(predictions)
+        counter = counter + 1
 
 
 if __name__ == "__main__":
