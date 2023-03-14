@@ -15,7 +15,7 @@ def main():
       en_tgt = item.get("translation").get("en")
       predictions = model_sentence.predict([[de_src, en_tgt]])
       print(counter)
-      print(de_src)S
+      print(de_src)
       print(en_tgt)
 
       print(predictions)
